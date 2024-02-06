@@ -47,5 +47,9 @@ namespace TPSGame
             transform.position = focusPosition - targetRotation * new UnityEngine.Vector3(0,0,distance); //To keep camera distance away from certain distance
             transform.rotation = targetRotation;
         }
+
+        internal UnityEngine.Quaternion PlannarRotation => UnityEngine.Quaternion.Euler(0, rotationY, 0);
+
+
     }
 }
